@@ -18,6 +18,7 @@
 <%		
 	}
 %>
+<a href="/helloweb/hello?id=abc">id</a>
 
 </body>
 </html>
