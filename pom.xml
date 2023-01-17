@@ -29,5 +29,6 @@
 		<module>helloweb</module>
 		<module>emaillist01</module>
 		<module>gustbook01</module>
+		<module>emaillist02</module>
 	</modules>
 </project>
