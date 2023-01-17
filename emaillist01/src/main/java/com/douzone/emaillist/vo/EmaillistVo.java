@@ -7,6 +7,15 @@ public class EmaillistVo {
 	private String lastName;
 	private String email;
 	
+	public EmaillistVo() {}
+	
+	public EmaillistVo(String firstName,String lastName,String email) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		
+	}
+	
 	public Long getNo() {
 		return no;
 	}
