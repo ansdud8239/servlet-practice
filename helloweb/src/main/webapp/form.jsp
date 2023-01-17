@@ -43,5 +43,8 @@
 		<br><br>
 		<input type="submit" value="회원가입">
 	</form>
+	<p>
+		<a href="/emaillist01">리스트 바로가기</a>
+	</p>
 </body>
 </html>
