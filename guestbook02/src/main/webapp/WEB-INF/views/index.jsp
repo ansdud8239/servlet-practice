@@ -14,7 +14,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form action="/guestbook02/gb" method="post">
+	<form action="<%=request.getContextPath() %>/gb" method="post">
 		<input type="hidden" name="a" value="add">
 		<table border=1 width=500>
 			<tr>
@@ -40,7 +40,7 @@
 			<td><%=no++%></td>
 			<td><%=vo.getName() %></td>
 			<td><%=vo.getRegDate() %></td>
-			<td><a href="/guestbook02/gb?a=deleteform&no=<%=vo.getNo()%>">삭제</a></td>
+			<td><a href="<%=request.getContextPath() %>/gb?a=deleteform&no=<%=vo.getNo()%>">삭제</a></td>
 		</tr>
 		<tr>
 			<td colspan=4><%=vo.getMessage().replace("\n", "<br>") %></td>

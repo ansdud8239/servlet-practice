@@ -35,7 +35,7 @@ public class GuestbookServlet extends HttpServlet {
 			GuestBookVo vo = new GuestBookVo(name, password, message, formatedNow);
 			// System.out.println(vo.toString());
 			new GuestBookDao().insert(vo);
-			response.sendRedirect("/guestbook02/gb");
+			response.sendRedirect(request.getContextPath()+"/gb");
 		} else if ("deleteform".equals(aciton)) {
 			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/deleteform.jsp");
 			rd.forward(request, response);
@@ -45,7 +45,7 @@ public class GuestbookServlet extends HttpServlet {
 
 			boolean result = new GuestBookDao().delete(no, password);
 			if (result) {
-				response.sendRedirect("/guestbook02/gb");
+				response.sendRedirect(request.getContextPath()+"/gb");
 			} else {
 				response.setCharacterEncoding("UTF-8");
 				response.setContentType("text/html; charset=UTF-8");

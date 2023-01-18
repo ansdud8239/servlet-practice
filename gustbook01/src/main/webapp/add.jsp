@@ -40,6 +40,6 @@
 	<br>
 	<h3>위의 내용이 방명록에 추가 되었습니다.</h3>
 	<br>
-	<a href='/guestbook01/'>방명록으로 가기</a>
+	<a href='<%=request.getContextPath() %>'>방명록으로 가기</a>
 </body>
 </html>
